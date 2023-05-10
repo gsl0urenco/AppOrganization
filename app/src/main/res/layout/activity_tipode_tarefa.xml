@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tipo"
+        android:padding="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Tarefa"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/azul"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha o estilo"
+        android:textAlignment="center"
+        android:textColor="@color/vermelho"
+        android:textSize="18dp"/>
+
+    <RadioGroup
+        android:id="@+id/tiposdeTarefas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+        <RadioButton
+            android:id="@+id/tarefaProfissional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profissional"/>
+        <RadioButton
+            android:id="@+id/tarefaSaude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saude"/>
+        <RadioButton
+            android:id="@+id/tarefaPessoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pessoal"/>
+        <RadioButton
+            android:id="@+id/tarefaRotina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rotina"/>
+        <RadioButton
+            android:id="@+id/tarefaAcademica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acadêmico"/>
+        <RadioButton
+            android:id="@+id/tarefaOutros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Outros"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_proximo"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Próximo"/>
+    <Button
+        android:id="@+id/btVoltarNome"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar"/>
+
+
+</LinearLayout>

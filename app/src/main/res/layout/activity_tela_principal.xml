@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/telaPrincipal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Rotina"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/azul"/>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Dia da Semana"
+        android:textAlignment="center"
+        android:textColor="@color/vermelho"
+        android:textSize="18dp"/>
+
+    <RadioGroup
+        android:id="@+id/diasdaSemana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+        <RadioButton
+            android:id="@+id/segunda_feira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Segunda-Feira"/>
+        <RadioButton
+            android:id="@+id/terca_feira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terca-Feira"/>
+        <RadioButton
+            android:id="@+id/quarta_feira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quarta-Feira"/>
+        <RadioButton
+            android:id="@+id/quinta_feira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quinta-Feira"/>
+        <RadioButton
+            android:id="@+id/sabado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sabado"/>
+        <RadioButton
+            android:id="@+id/domingo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Domingo"/>
+        <RadioButton
+            android:id="@+id/todosDias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Todos os Dias"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_TelaPrincipal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Próxima"/>
+    <Button
+        android:id="@+id/bthorario"
+        android:layout_width="fill_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="Voltar"/>
+
+
+</LinearLayout>
