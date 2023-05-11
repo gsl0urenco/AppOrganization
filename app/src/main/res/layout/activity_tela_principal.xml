@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:text="Próxima"/>
+        android:text="Salvar"/>
     <Button
         android:id="@+id/bthorario"
         android:layout_width="fill_parent"

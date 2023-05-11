@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class telaPrincipal extends AppCompatActivity implements View.OnClickListener {
     Button bthorario;
+    Button bt_TelaPrincipal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,8 @@ public class telaPrincipal extends AppCompatActivity implements View.OnClickList
         getSupportActionBar().hide();
 
         bthorario = (Button) findViewById(R.id.bthorario);
+        bt_TelaPrincipal = (Button) findViewById(R.id.bt_TelaPrincipal);
+        bt_TelaPrincipal.setOnClickListener(this);
         bthorario.setOnClickListener(this);
     }
 
@@ -25,6 +28,10 @@ public class telaPrincipal extends AppCompatActivity implements View.OnClickList
         if (view.getId()==R.id.bthorario){
             Intent intencao = new Intent(this, horarioTarefa.class);
             startActivity(intencao);
+        }
+        if (view.getId()==R.id.bt_TelaPrincipal){
+            Intent tarefaSalva = new Intent(this, tarefaSalva.class);
+            startActivity(tarefaSalva);
         }
     }
 }
