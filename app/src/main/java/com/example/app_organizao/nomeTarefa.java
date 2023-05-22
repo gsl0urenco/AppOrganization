@@ -29,15 +29,9 @@ public class nomeTarefa extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onClick(View view) {
-        String nome = nomeTarefa.getText().toString();
-
-        BancoController bd = new BancoController(getBaseContext());
-        String resultado;
 
         if (view.getId()==R.id.btnomeTarefa){
             Intent intencao = new Intent(this, tipodeTarefa.class);
-            resultado = bd.insereDadosnometarefa(nome);
-            Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
             startActivity(intencao);
         }
     }

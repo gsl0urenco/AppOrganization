@@ -8,7 +8,7 @@ public class criaBanco extends SQLiteOpenHelper {
 
     private static final String NOME_BANCO = "banco.db";
 
-    private static final int VERSAO = 5;
+    private static final int VERSAO = 7;
 
     public criaBanco(Context context) { super(context, NOME_BANCO, null, VERSAO);}
 
@@ -22,10 +22,12 @@ public class criaBanco extends SQLiteOpenHelper {
         db.execSQL(sql);
 
         String sql1 = "CREATE TABLE nometarefa ("
+                + "codigo integer primary key autoincrement,"
                 + "nome text)";
         db.execSQL(sql1);
 
         String sql2 = "CREATE TABLE horariotarefa ("
+                + "codigo integer primary key autoincrement,"
                 + "manha text,"
                 + "tarde text,"
                 + "noite text,"
@@ -33,6 +35,7 @@ public class criaBanco extends SQLiteOpenHelper {
         db.execSQL(sql2);
 
         String sql3 = "CREATE TABLE tipotarefa ("
+                + "codigo integer primary key autoincrement,"
                 + "profissional text,"
                 + "saude text,"
                 + "pessoal text,"
@@ -42,6 +45,7 @@ public class criaBanco extends SQLiteOpenHelper {
         db.execSQL(sql3);
 
         String sql4 = "CREATE TABLE diasemana ("
+                + "codigo integer primary key autoincrement,"
                 + "segunda text,"
                 + "terca text,"
                 + "quarta text,"
@@ -51,6 +55,13 @@ public class criaBanco extends SQLiteOpenHelper {
                 + "domingo text,"
                 + "todosdias text)";
         db.execSQL(sql4);
+
+        String sql5 = "CREATE TABLE agendamentos ("
+                + "codigo integer primary key autoincrement,"
+                + "nome text,"
+                + "data text,"
+                + "hora text)";
+        db.execSQL(sql5);
     }
 
     @Override
@@ -60,6 +71,7 @@ public class criaBanco extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS horariotarefa");
         db.execSQL("DROP TABLE IF EXISTS tipotarefa");
         db.execSQL("DROP TABLE IF EXISTS diasemana");
+        db.execSQL("DROP TABLE IF EXISTS agendamentos");
         onCreate(db);
 
     }

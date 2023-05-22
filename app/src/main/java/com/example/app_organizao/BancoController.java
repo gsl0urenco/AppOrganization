@@ -51,23 +51,13 @@ public class BancoController {
         }
     }
 
-    public String insereDadosnometarefa(String nome){
-        ContentValues valores;
-        long resultado;
-        db = banco.getWritableDatabase();
 
-        valores = new ContentValues();
-        valores.put("nome", nome);
 
-        resultado = db.insert("nometarefa", null, valores);
-        db.close();
 
-        if(resultado == -1){
-            return "Erro ao inserir nome da tarefa, tente novamente!";
-        }else {
-            return "nome da tarefa Salvo!";
-        }
-    }
+
+
+
+
 
 
 }

@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Cursor dados = bd.carregaDadosLogin(login, senha);
 
         if (dados.moveToFirst()){
-            Intent telaPrincipal = new Intent(this, nomeTarefa.class);
+            Intent telaPrincipal = new Intent(this, criarTarefa_Escolher.class);
             startActivity(telaPrincipal);
         }else {
             String msg = "Usuário ou Senha incorretos, tente novamente!";

@@ -30,7 +30,7 @@ public class telaPrincipal extends AppCompatActivity implements View.OnClickList
             startActivity(intencao);
         }
         if (view.getId()==R.id.bt_TelaPrincipal){
-            Intent tarefaSalva = new Intent(this, tarefaSalva.class);
+            Intent tarefaSalva = new Intent(this, calendario.class);
             startActivity(tarefaSalva);
         }
     }

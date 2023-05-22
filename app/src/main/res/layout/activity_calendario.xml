@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <DatePicker
+        android:id="@+id/calendario"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="350dp"
+        android:layout_height="422dp"/>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Horario: "/>
+
+    <Spinner
+        android:id="@+id/txtHora"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_salvar_calendario"
+        android:text="salvar"
+        android:layout_margin="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
